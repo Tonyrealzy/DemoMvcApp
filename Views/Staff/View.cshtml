@@ -1,0 +1,65 @@
+﻿@using DemoAppMvc.Models
+@model Staff;
+@{
+    string pageTitle = ViewBag.Header;
+}
+
+<html>
+<head>
+    <title>@pageTitle</title>
+    <style>
+        .body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            top: 50%;
+            background-color:darkgray;
+            align-items: center; /* Center horizontally */
+            justify-content: center;
+            box-sizing: border-box; /* Include padding in the total width/height */
+        }
+        .view {
+            top: 50%;
+            left: 30%;
+        }
+
+        #button-id {
+            display: inline;
+            position:absolute;
+            top: 16%;
+            right: 20%;
+        }
+
+        .button {
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            margin: 20px;
+            margin-bottom: 20px;
+        }
+
+        .button:hover {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <br />
+        <h1>@pageTitle</h1>
+        <nav id="button-id">
+            <a class="button" asp-controller="Staff" asp-action="List">Back</a>
+        </nav>
+        <section class="view">
+            <br /><br />
+            <h4><span>@Model.FirstName</span>'s Record</h4>
+            <p>Id: <span>@Model.Id</span></p>
+            <p>Last Name: <span>@Model.LastName</span></p>
+            <p>First Name: <span>@Model.FirstName</span></p>
+            <p>Age: <span>@Model.Age</span></p>
+        </section>
+    </div>
+</body>
+</html>

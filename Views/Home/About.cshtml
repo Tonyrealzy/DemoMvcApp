@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>About Page</h1>
+@{
+    string name = "Charles";
+    int age = 30;
+}
+
+<h1>This is the About Page for @name</h1>
+<h1>The header is @ViewBag.Header</h1>
+<h1>The musician is @ViewData["Footer"]</h1>
+<h1>The item is @Model</h1>
+
+
+@if(age > 18)
+{
+    <h2></h2>
+}

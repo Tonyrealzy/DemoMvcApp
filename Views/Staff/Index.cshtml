@@ -1,0 +1,47 @@
+﻿@{
+    string pageTitle = ViewBag.Header;
+}
+<html>
+<head>
+    <title>@pageTitle</title>
+    <style>
+        #button-id {
+            display: inline;
+            position: absolute;
+            top: 16%;
+            right: 20%;
+        }
+
+        .button {
+            /* border:1px solid brown;
+                                border-radius: 15%;
+                        padding: 5px 15px; */
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            margin: 10px;
+        }
+
+            .button:hover {
+                color: brown;
+                /* color:white; */
+            }
+    </style>
+</head>
+<body>
+    <h1>@pageTitle</h1>
+    <nav id="button-id">
+        <a class="button" asp-controller="Staff" asp-action="Create">Create</a>
+        <a class="button" asp-controller="Staff" asp-action="List">List</a>
+    </nav>
+    <br />
+
+    <section>
+        <p>In eu mi bibendum neque egestas congue quisque. Mattis molestie a iaculis at erat pellentesque adipiscing. Eget nunc scelerisque viverra mauris. Pellentesque elit eget gravida cum sociis natoque. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Lacus suspendisse faucibus interdum posuere lorem ipsum. Adipiscing elit duis tristique sollicitudin. Nibh mauris cursus mattis molestie a iaculis at erat. Tristique nulla aliquet enim tortor at. Dui id ornare arcu odio ut sem nulla pharetra diam. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat. Integer enim neque volutpat ac tincidunt vitae.</p><br />
+
+        <p>
+            Ullamcorper a lacus vestibulum sed arcu non odio. Ultrices gravida dictum fusce ut. Aliquet risus feugiat in ante metus dictum at tempor. Massa massa ultricies mi quis hendrerit. Sit amet luctus venenatis lectus. Quam pellentesque nec nam aliquam. Lectus mauris ultrices eros in. Sodales ut etiam sit amet nisl purus in. Et tortor consequat id porta nibh venenatis cras sed felis. Egestas maecenas pharetra convallis posuere morbi leo urna molestie at.
+        </p>
+    </section>
+</body>
+</html>
